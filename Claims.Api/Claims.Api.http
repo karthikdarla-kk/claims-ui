@@ -1,0 +1,23 @@
+@Claims.Api_HostAddress = https://localhost:7185
+
+GET {{Claims.Api_HostAddress}}/api/claims
+Accept: application/json
+
+###
+
+GET {{Claims.Api_HostAddress}}/api/dashboard
+Accept: application/json
+
+###
+
+POST {{Claims.Api_HostAddress}}/api/claims
+Content-Type: application/json
+
+{
+  "claimantName": "Jordan Lee",
+  "claimantEmail": "jordan@example.com",
+  "type": "Motor",
+  "incidentDate": "2026-03-01",
+  "description": "Vehicle damaged in a car park.",
+  "estimatedLoss": 2500
+}
